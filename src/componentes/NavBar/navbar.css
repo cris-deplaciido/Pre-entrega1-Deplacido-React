@@ -1,0 +1,38 @@
+.nav h1 {
+    align-items: center;
+    font-size: 4rem;
+}
+
+
+
+.btn1 {
+    background-color: rgb(18, 103, 214);
+    border-radius: 5px;
+    border: 0.5;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 1.3rem;
+    color: azure;
+}
+
+
+.btn2 {
+    background-color: rgb(18, 103, 214);
+    border-radius: 5px;
+    border: 0.5;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 1.3rem;
+    color: azure;
+}
+
+
+.btn3 {
+    background-color: rgb(18, 103, 214);
+    border-radius: 5px;
+    border: 0.5;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 1.3rem;
+    color: azure;
+    }

@@ -1,0 +1,12 @@
+.cartwidget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.cartwidget img {
+    width: 5%;
+    padding: 20px;
+}
