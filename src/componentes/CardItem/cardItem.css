@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItem{
+    border: 3px solid rgb(243, 241, 241);
+    height: 480px;
+    width: 300px;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardImg {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardImg img {
+    width: 100%;
+}
+
+.buttons {
+    height: 50px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

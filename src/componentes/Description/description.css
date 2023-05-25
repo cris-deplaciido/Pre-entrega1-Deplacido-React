@@ -1,0 +1,27 @@
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.title {
+    font-size: 21px;
+    margin: 6px 0;
+}
+
+.description {
+    display: none;
+}
+
+.cant {
+    color: black;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.precio {
+    color: rgb(7, 35, 156);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 6px 0;
+}

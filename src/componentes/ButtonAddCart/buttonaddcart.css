@@ -1,0 +1,20 @@
+#AddCart {
+    background-color: 0;
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AddCart p{
+color: white;
+font-size: 28px;
+transform: scale();
+}
+
+#AddCart:hover {
+    background-color: rgb(21, 59, 228);
+}

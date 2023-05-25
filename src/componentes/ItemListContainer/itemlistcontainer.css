@@ -1,3 +1,25 @@
-.titulo h3 {
-    font-size: 2rem;
+
+
+.containerItemList {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+.containerItemList ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerItemList ul li{
+    margin: 15px;
+    color: rgb(7, 35, 156);
+    font-size: 25px;
+
+} 
+

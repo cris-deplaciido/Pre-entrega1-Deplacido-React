@@ -1,0 +1,13 @@
+#details {
+    height: 40px;
+    width: 78%;
+    border-radius: 50px;
+    background-color: rgb(7, 35, 156);
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+#details:hover {
+    background-color: rgb(21, 59, 228);
+}

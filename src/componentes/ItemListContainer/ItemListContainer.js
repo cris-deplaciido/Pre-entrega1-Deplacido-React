@@ -1,12 +1,37 @@
-import './itemlistcontainer.css'
 
+import './itemlistcontainer.css';
+import { Link } from 'react-router-dom';
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = (props) => {
     return (
-        <div className="titulo">
-            <h3>{greeting}</h3>
-        </div>
+        <ul>
+            <li>
+                <Link to="category/mesas" >
+                    {props.itemUno}
+                </Link>
+            </li>
+
+            <li>
+                <Link to="category/roperos">
+                    {props.itemDos}
+                </Link>
+            </li>
+
+            <li>
+                <Link to="category/sillas">
+                    {props.itemTres}
+                </Link>
+            </li>
+
+            <li>
+                <Link to="category/sillones">
+                    {props.itemCuatro}
+                </Link>
+            </li>
+        </ul>
+        
+        
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;

@@ -1,13 +1,18 @@
-import './App.css';
+import './style.css';
 import NavBar from './componentes/NavBar/NavBar';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ContainerCardItems from './componentes/ContainerCardItems/ContainerCardItems';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer greeting={'Bienvenido a Rago Amoblamientos'}/>
-    </div>
+      <BrowserRouter>
+          <NavBar />
+          <Routes>
+          <Route path='/' element={ <ContainerCardItems />} />
+          <Route path='/item/:id' element={ <ContainerCardItems />} />
+          <Route path='/category/:idCategory' element={ <ContainerCardItems />} />
+          </Routes>
+      </BrowserRouter>
   );
 }
 

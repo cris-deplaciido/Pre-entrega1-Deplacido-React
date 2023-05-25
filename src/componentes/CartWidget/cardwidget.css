@@ -1,12 +1,30 @@
-.cartwidget {
+.containerCart  div{
+    width: 10%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-
-
-.cartwidget img {
-    width: 5%;
-    padding: 20px;
+.containerLength img {
+    background-color:0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    
+}
+.containerLength span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:rgb(65, 65, 238);
+    color: rgb(247, 242, 242);
+    text-align: center;
+    top: 0;
+    left: 96%;
+    border-radius: 50%;
 }

@@ -1,18 +1,32 @@
+import Brand from "../Brand/Brand";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import CartWidget from "../CartWidget/CartWidget";
-import './navbar.css';
+import "./navbar.css"
+
 
 const NavBar = () => {
     return (
-        <nav className="nav">  
-            <h1>Ecommerce</h1>
-            <div >
-            <button className="btn1"> Inicio </button>
-            <button className="btn2">Productos</button>
-            <button className="btn3">Contacto</button>
+        <header> 
+
+            <div className="containerBrand">
+            <Brand />
             </div>
-            <CartWidget /> 
-        </nav> 
+
+            <nav className="containerItemList">
+                <ItemListContainer 
+                    itemUno = "Mesas"
+                    itemDos = "Roperos"
+                    itemTres = "Sillas"
+                    itemCuatro = "Sofa/Sillones"
+                />
+            </nav>
+            
+            <div className="containerCart">
+                <CartWidget />
+            </div>
+
+        </header> 
     )
 } 
 
-export default NavBar
+export default NavBar;
