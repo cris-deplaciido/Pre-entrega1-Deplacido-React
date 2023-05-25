@@ -6,8 +6,9 @@ import fetchSimulation from "../../utilis/fetchSimulation";
 import productos from "../../utilis/products";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import AddCantCart from "../AddCantCart/AddCantCart"
 
-const DetailsItem = (props) => {
+const DetailsItem = () => {
     const [ datos, setDatos ] = useState([]);
     const { idItem } = useParams();
     
@@ -15,7 +16,7 @@ const DetailsItem = (props) => {
 
         setDatos([])
 
-        fetchSimultion(productos.filter( flt => flt.id == idItem), 2000)
+        fetchSimulation(productos.filter( flt => flt.id == idItem), 2000)
         .then(resp => setDatos(resp))
         .catch(error => console.log(error))
     }, [idItem])

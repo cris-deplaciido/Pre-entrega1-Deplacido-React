@@ -3,6 +3,7 @@ import "./cardItem.css"
 import Description from "../Description/Description";
 import ButtonDetails from "../ButtonDetails/ButtonDetails";
 import ButtonAddCart from "../ButtonAddCart/ButtonAddCart";
+import { Link } from "react-router-dom";
 import ImgPrueba from "../../img/post10b.webp";
 
 const CardItem = (props)  => {
@@ -17,8 +18,16 @@ const CardItem = (props)  => {
             precio= {props.precio} 
             />
             <div className="buttons">
-                <ButtonDetails />
-                <ButtonAddCart />
+            <Link to={ `/item/${props.id}`}>
+                <ButtonDetails 
+                    txt="Ver detalles"
+                />
+            </Link>
+
+                <ButtonAddCart 
+                    id={props.id}
+                    svg={ImgPrueba}
+                />
             </div>
         </div>
     )

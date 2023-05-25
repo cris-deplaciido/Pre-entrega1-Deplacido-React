@@ -10,7 +10,7 @@ const ContainerCardItems = () => {
     let {idCategory} = useParams()
     
     useEffect(() => {
-            if (idCategory  == undefined) {
+            if (idCategory == undefined) {
                 fetchSimulation(productos, 2000)
                 .then(resp => setDatos(resp))
                 .catch(error => console.log(error))
@@ -29,6 +29,7 @@ const ContainerCardItems = () => {
                 datos.map( product => (
                     <CardItem
                         key={product.id}
+                        id={product.id}
                         imagen={product.imageProduct.firtsImage}
                         title={product.title}
                         cantidad={product.stock}

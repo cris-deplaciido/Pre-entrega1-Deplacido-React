@@ -1,9 +1,13 @@
 import "./buttondetails.css"
 
-const ButtonDetails = () => {
+const ButtonDetails = (props) => {
     return (
-        <button id="details">Ver detalles</button>
-    )
+        <button 
+            id="details" 
+            style={{ width: "180%"}}
+    >{props.txt}</button>
+)
+
 }
 
 export default ButtonDetails;

@@ -1,11 +1,12 @@
 #details {
     height: 40px;
-    width: 78%;
-    border-radius: 50px;
-    background-color: rgb(7, 35, 156);
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(12, 82, 151);
     color: white;
     font-size: 20px;
     border: none;
+    margin-left: 8px;
 }
 
 #details:hover {

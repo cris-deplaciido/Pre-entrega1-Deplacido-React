@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detailsItem {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+
+.containerLeft {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.containerLeft Img {
+    width: 100%;
+}
+
+.cardImg {
+    display: flex;
+    justify-content: center;
+}
+
+.containerRight {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 600px;
+}
+
+.descriptionItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+}

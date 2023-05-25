@@ -1,3 +1,5 @@
+import "./addCantCart.css"
+
 const AddCantCart = (props) => {
     return(
         <div className="addCantCart">

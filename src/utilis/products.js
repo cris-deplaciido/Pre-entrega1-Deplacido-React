@@ -28,7 +28,7 @@ const productos = [
 
     {
         id: 3,
-        title: "Mesa Traful",
+        title: "Mesa Comedor Traful ",
         description: "Mesa con estructura de madera de paraíso lustrado con tapa enchapada en Paraíso o Laminada blanca, Posee patas con reguladores",
         stock: 20,
         type: "mesas",
