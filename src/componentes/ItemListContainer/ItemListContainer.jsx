@@ -6,6 +6,13 @@ const ItemListContainer = (props) => {
     return (
         <ul>
             <li>
+                <Link to={"/"}>
+                    Inicio
+                </Link>
+            </li>
+
+
+            <li>
                 <Link to="category/mesas" >
                     {props.itemUno}
                 </Link>

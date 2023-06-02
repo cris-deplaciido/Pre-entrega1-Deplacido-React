@@ -2,6 +2,7 @@ import Brand from "../Brand/Brand";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import CartWidget from "../CartWidget/CartWidget";
 import "./navbar.css"
+import ContainerCart from "../ContainarCart/ContainerCart";
 
 
 const NavBar = () => {
@@ -14,6 +15,7 @@ const NavBar = () => {
 
             <nav className="containerItemList">
                 <ItemListContainer 
+                    itemCero= "Inicio"
                     itemUno = "Mesas"
                     itemDos = "Roperos"
                     itemTres = "Sillas"
@@ -25,6 +27,7 @@ const NavBar = () => {
                 <CartWidget />
             </div>
 
+            <ContainerCart />
         </header> 
     )
 } 
