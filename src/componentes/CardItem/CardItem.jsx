@@ -4,7 +4,7 @@ import Description from "../Description/Description";
 import ButtonDetails from "../ButtonDetails/ButtonDetails";
 import ButtonAddCart from "../ButtonAddCart/ButtonAddCart";
 import { Link } from "react-router-dom";
-import ImgPrueba from "../../img/post10b.webp";
+import cart from "../../img/carrito-de-compras.png";
 
 const CardItem = (props)  => {
     return (
@@ -26,7 +26,7 @@ const CardItem = (props)  => {
 
                 <ButtonAddCart 
                     id={props.id}
-                    svg={ImgPrueba}
+                    svg={cart}
                 />
             </div>
         </div>

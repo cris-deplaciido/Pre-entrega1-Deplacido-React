@@ -22,6 +22,7 @@ const ProviderContextCart = ({children}) => {
             if(product.id === id){
                 let quantity = product.quantity;
 
+                console.log()
                 if(quantity < productAdd.stock){
                     const newQuantity = {...product, quantity: quantity + 1}
                     setListCart( [...productToMaintain, newQuantity] )
@@ -31,10 +32,9 @@ const ProviderContextCart = ({children}) => {
                 break;
             }
         }
+
         add && setListCart( [...productToMaintain, {...productAdd, quantity: 1 } ] )
     }
-
-    console.log(listCart)
 
     const clearCart = () => {
         setListCart( [] )
@@ -42,6 +42,7 @@ const ProviderContextCart = ({children}) => {
 
     const remove = id => {
         const updateList = listCart.filter(product => product.id !== id);
+        setListCart(updateList)
     }
 
     return (

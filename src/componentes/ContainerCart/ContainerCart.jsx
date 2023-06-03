@@ -1,11 +1,11 @@
 import "./containerCart.css";
-import clear from "../../img/clear.svg";
 import ItemCart from "../ItemCart/ItemCart";
+import clear from "../../img/clear.svg";
 import { useContext } from "react";
 import { listCartContext } from "../../componentes/ProviderContextCart/ProviderContextCart"
 
 const ContainerCart = () => {
-    const {listCart, clearCart} = useContext(listCartContext);
+    const { listCart, clearCart } = useContext(listCartContext);
     return( 
         <div className="cart">
             
@@ -17,13 +17,13 @@ const ContainerCart = () => {
 
             <div className="containerItemsCart">
                 {
-                    (listCart.length === 0) ? <span className="emptyCart">Tu Carrito esta vacio !!</span>
+                    (listCart.length === 0 ) ? <span className="emptyCart">Tu Carrito esta vacio 😅 !!</span>
                     : listCart.map( product => (
                         <ItemCart
                             key={product.id}
                             id={product.id}
                             title={product.title}
-                            image={product.image}
+                            image={product.imageProduct.firtsImage}
                             quantity={product.quantity}
                             price={product.price}
                         />
@@ -34,7 +34,7 @@ const ContainerCart = () => {
             <div className="terminarCompra"> 
                 <button className="terminar">Terminar Compra</button>
 
-                <button className="clear">
+                <button className="clear" onClick={clearCart}>
                     <img src={clear} alt=""></img>
                 </button>
             </div>

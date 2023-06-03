@@ -2,16 +2,20 @@ import { useContext } from "react";
 import "./buttonaddcart.css"
 import { listCartContext } from "../ProviderContextCart/ProviderContextCart"
 
-const ButtonAddCart = ({id}) => {
+const ButtonAddCart =( { id, svg} ) => {
 
-    let {addProduct} = useContext(listCartContext)
+    let {addProduct} = useContext(listCartContext);
+
+    const handlerClick = () => {
+        addProduct(id)
+    }
 
     return (
-            <button id="AddCart" onClick={ () => addProduct(id)}>
-                <p>🛒</p>
-            </button>
-        
-    )
-};
+        <button id="AddCart" onClick={handlerClick}>
+            <img src={svg} alt=""></img>
+        </button>
+
+    );
+}
 
 export default ButtonAddCart;

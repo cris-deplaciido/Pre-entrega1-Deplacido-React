@@ -1,0 +1,69 @@
+.itemCart {
+    display: flex;
+    border: 1px solid #d2b8ff;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 82, 151);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.delete img{
+    transform: scale(0.6);
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.img img{
+    transform: scale(0.4);
+}
+
+.description-cantidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33.33%;
+    height: 50%;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 50%;
+    justify-content: center;
+}
+
+.subtotal{
+    font-weight: bold;
+    width: 100%;
+}
+
+.precioo{
+    font-weight: bold;
+    color: rgb(12, 82, 151);
+    font-size: 32px;
+    width: 100%;
+}

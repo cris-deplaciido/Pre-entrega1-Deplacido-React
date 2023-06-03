@@ -8,9 +8,8 @@ import ContainerCart from "../ContainerCart/ContainerCart";
 const NavBar = () => {
     return (
         <header> 
-
             <div className="containerBrand">
-            <Brand />
+                <Brand />
             </div>
 
             <nav className="containerItemList">
