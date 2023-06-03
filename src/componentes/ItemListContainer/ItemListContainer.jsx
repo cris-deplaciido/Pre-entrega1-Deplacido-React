@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ItemListContainer = (props) => {
     return (
         <ul>
-            <li>
+            <li style={{ color: "white"}}>
                 <Link to={"/"}>
                     Inicio
                 </Link>

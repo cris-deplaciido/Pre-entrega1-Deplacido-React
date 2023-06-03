@@ -1,5 +1,4 @@
 
-
 .containerItemList {
     width: 70%;
     height: 100%;
@@ -16,9 +15,9 @@
     align-items: center;
 }
 
-.containerItemList ul li{
-    margin: 15px;
-    color: rgb(7, 35, 156);
+.containerItemList li{
+    margin: 10px;
+    color: white;
     font-size: 25px;
 
 } 

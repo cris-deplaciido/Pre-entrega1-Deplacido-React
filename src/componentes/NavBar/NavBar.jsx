@@ -2,7 +2,7 @@ import Brand from "../Brand/Brand";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import CartWidget from "../CartWidget/CartWidget";
 import "./navbar.css"
-import ContainerCart from "../ContainarCart/ContainerCart";
+import ContainerCart from "../ContainerCart/ContainerCart";
 
 
 const NavBar = () => {
