@@ -1,8 +1,8 @@
 .itemCart {
     display: flex;
-    border: 1px solid #d2b8ff;
+    border: 1px solid rgb(12, 82, 151);
     width: 100%;
-    height: 130px;
+    height: 145px;
     align-items: center;
     border-radius: 5px;
     margin: 10px 0;

@@ -3,14 +3,26 @@ import ItemCart from "../ItemCart/ItemCart";
 import clear from "../../img/clear.svg";
 import { useContext } from "react";
 import { listCartContext } from "../../componentes/ProviderContextCart/ProviderContextCart"
+import { constrollerShowCart } from "../ContextCart/ContextCart";
 
 const ContainerCart = () => {
+    
     const { listCart, clearCart } = useContext(listCartContext);
+    const { cartShow, setCartShow } = useContext(constrollerShowCart)
+
+    const style = {
+        display: cartShow 
+    }
+
+    const closeCart = () => {
+        setCartShow( (cartShow === "none") ? "flex" : "none" )
+    }
+
     return( 
-        <div className="cart">
+        <div className="cart" style={style}>
             
             <div className="cerrar">
-                <button className="close">
+                <button className="close" onClick={closeCart}>
                     <span>❌</span>
                 </button>
             </div>
@@ -18,14 +30,14 @@ const ContainerCart = () => {
             <div className="containerItemsCart">
                 {
                     (listCart.length === 0 ) ? <span className="emptyCart">Tu Carrito esta vacio 😅 !!</span>
-                    : listCart.map( product => (
+                    : listCart.map( producto => (
                         <ItemCart
-                            key={product.id}
-                            id={product.id}
-                            title={product.title}
-                            image={product.imageProduct.firtsImage}
-                            quantity={product.quantity}
-                            price={product.price}
+                            key={producto.id}
+                            id={producto.id}
+                            title={producto.title}
+                            image={producto.imageProduct.firtsImage}
+                            quantity={producto.quantity}
+                            price={producto.price}
                         />
                     ))
                 }
