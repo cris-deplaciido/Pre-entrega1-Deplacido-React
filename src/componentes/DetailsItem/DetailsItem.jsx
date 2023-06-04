@@ -28,16 +28,16 @@ const DetailsItem = () => {
                         <>
                         <div className="containerLeft">
                             <Image
-                                imagen={datos[0].imageProduct.firtsImage}
+                                imagen={items.imageProduct.firtsImage}
                             />
                         </div>
 
                         <div className="containerRight">
                             <Description
-                                title= {datos[0].title}
-                                parrafo= {datos[0].description}
-                                cantidad= {datos[0].stock}
-                                precio= {datos[0].price}
+                                title= {items.title}
+                                parrafo= {items.description}
+                                cantidad= {items.stock}
+                                precio= {items.price}
                             />
                         <div className="buttons">
                             <AddCantCart
